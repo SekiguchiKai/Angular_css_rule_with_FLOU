@@ -58,7 +58,6 @@
 ### Angularのディレクトリ構成
 * 基本的には、Angular-CLIの構成に従う。
 
-
 ```
 client
 ├── src
@@ -74,15 +73,20 @@ client
 │   │    │   ├── hoge.module.ts
 │   │    │
 │   │    ├── shared
-│   │    │     ├── components(各componentで共通で使用するcomponent)
-│   │    │     │
-│   │    │     ├── pipes
-│   │    │     │    ├──hoge.pipe.ts
-│   │    │     │    ├──hoge.pipe.spec.ts
-│   │    │     │      
-│   │    │     ├── services
-│   │    │          ├── api(サーバー側のAPIを叩くためのservice)
-│   │    │          ├── util(ユーティリティ)
+│   │          ├── components(各componentで共通で使用するcomponent)
+│   │          │
+│   │          ├── pipes
+│   │          │    ├──hoge.pipe.ts
+│   │          │    ├──hoge.pipe.spec.ts
+│   │          │      
+│   │          ├── services
+│   │               ├── api(サーバー側のAPIを叩くためのservice)
+│   │               │      ├──hoge.service.ts
+│   │               │      ├──hoge.service.spec.ts
+│   │               │         
+│   │               ├── util(ユーティリティ)
+│   │                    ├──hoge.service.ts
+│   │                    ├──hoge.service.ts
 │   │ 
 │   ├── assets(imgなど)
 │   │    ├── img(画像)
@@ -134,7 +138,7 @@ client
 │        
 ├── tslint.json
     
-````
+```
 
 ## 参考にさせていただいたサイト
 [hiloki/flocss: CSS organization methodology.](https://github.com/hiloki/flocss)
